@@ -168,14 +168,14 @@ class Auto {
 
    miLista.appendChild(encabezado)
    
-   listarAutos.forEach((autos)=>{
+  autos.forEach((auto)=>{
        const nodotr = document.createElement("tr");
        let nodotd = document.createElement("td");
-       nodotd.innerHTML=`${autos.marca}`;
+       nodotd.innerHTML=`${auto.marca}`;
        nodotr.appendChild(nodotd)
        
        nodotd = document.createElement("td");
-       nodotd.innerHTML=`${autos.modelo}`;
+       nodotd.innerHTML=`${auto.modelo}`;
        nodotr.appendChild(nodotd);
 
        miLista.appendChild(nodotr);
