@@ -58,15 +58,15 @@ class Auto {
   
   function agregarAuto() {
     let id = 1;
-    if (agregarAuto.length > 0) {
-      id = agregarAuto[agregarAuto.length - 1].id + 1;
+    if (autos.length > 0) {
+      id = autos[autos.length - 1].id + 1;
     }
   
     let marca = prompt("Ingrese una Marca");
     let modelo = prompt("Ingrese un Modelo");
-    let auto = new Auto(id, marca, modelo);
+    let newAuto = new Auto(id, marca, modelo);
   
-    autos.push(autos);
+    autos.push(newAuto);
     localStorage.setItem("Autos", autos)
   }
   
